@@ -24,9 +24,11 @@ Create 10 variables using a combination of alphabets, numbers, underscore, hyphe
  - Only numeric or variables starting with numerics are not allowed
  - **$** can be used between alphabets 
 
- Create variable for storing the department of an employee
-
+ 
 ### Assignment 1.2
+
+- Create variable for storing the department of an employee
+
 - Create a variable for storing name of the teacher of the school
 
 - Create a variable for storing name of the dish item in a restuarant
