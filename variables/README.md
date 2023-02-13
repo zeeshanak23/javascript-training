@@ -62,7 +62,9 @@ Declare 10 constants - c1, c2, ..... c10 ( Use either string or number as the va
 const c1 = "constant 1";
 ```
 Try re-assigning the variables and see the error
+```
 c1 = "constant 2"
+```
 
 Display the value of all the 10 constants declared above
 
