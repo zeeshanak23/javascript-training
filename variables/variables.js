@@ -10,7 +10,22 @@ let js22 = "amazing26";
 let js_Bane = "amazing86";
 let js_ = "amazing576";
 
+let teacherName = "Shadab";
 
+let dishItem = "chicken_lollipop";
+
+let onlineStorePrice = 1123;
+
+let studentId = "shan@123"
+
+let accountNo = 78987654321223;
+
+
+console.log(studentId)
+console.log(onlineStorePrice)
+console.log(dishItem)
+console.log(teacherName)
+console.log(accountNo)
 
 
 
