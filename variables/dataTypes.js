@@ -1,58 +1,79 @@
-//Data types are of two types - Primitive & Object
-
-// Primitive data type
-// 1. Number ( Decimal or integers)
-
-// Declare 5 variables that store numbers(integer)
-
-// Declare 5 constants that store numbers(integer)
-
 /**
- * String - Sequence of characters
- * example:
- * let name = "My Name"
- *
- * Declare 5 variables storing a string
- * Declare 5 constants storing a single character
+ * Declare 5 constant that store number
  */
+const c1 = 56;
+const c2 = 67;
+const c3 = 89;
+const c4 = 97;
+const c5 = 67;
+console.log(c1)
+console.log(c2)
+console.log(c3)
+console.log(c4)
+console.log(c5)
 
-/**
- * Boolean - Logical type that can be true or false
- * Example:
- * let isCountry = true
- *
- * Declare 5 variables that store boolean value 'true'
- * Declare 5 variables that store boolean value 'false'
- */
+/** 
+ * Declare 5 variable that store boolen value true
+*/
+let isCold = true
+let isOld = true
+let isMan = true
+let isGet = true
+let isSummer = true
+console.log(isCold)
+console.log(isOld)
+console.log(isMan)
+console.log(isGet)
+console.log(isSummer)
 
-/**
- * Notes
- * Javascript has dynamic typing. Value has type, not the variable
- */
+/** 
+ * Declare 5 variable that store boolen value false
+// */
+// let isWater = false
+// let isSnack = false
+// let isLaptop = false
+// let isTasty = false
+// let isDelicious = false
+// console.log(isWater)
+// console.log(isSnack)
+// console.log(isLaptop)
+// console.log(isTasty)
+// console.log(isDelicious)
 
-/**
- * Check the type of all the variables declared above using typeof
- * console.log(typeof name)
- */
+// check the type of variables
+// console.log(typeof c1)
+// console.log(typeof c2)
+// console.log(typeof c3)
+// console.log(typeof c4)
+// console.log(typeof c5)
 
-/**
- * Re-assign the string variables to boolean values and boolean variables to numeric values
- * and numeric variables to string values
- *
- * Now re-display the types of all the variables
- */
+// console.log(typeof isCold)
+// console.log(typeof isOld)
+// console.log(typeof isMan)
+// console.log(typeof isGet)
+// console.log(typeof isSummer)
 
-/**
- * Declare empty variables
- *
- * Declare empty variables - year, month, day
- *
- * Now display the typeof all the variables
- *
- * Next assign numeric values to all the variables
- *
- * let year = 2010
- *
- * Display the typeof all the above variables
- */
-let enteredValue = prompt("enter a value");
+// console.log(typeof isWater)
+// console.log(typeof isSnack)
+// console.log(typeof isLaptop)
+// console.log(typeof isTasty)
+// console.log(typeof isDelicious)
+
+// Declare empty variable
+let year = " ";
+console.log(typeof year)
+
+let month = " ";
+console.log(typeof month)
+
+let day = " ";
+console.log(typeof day)
+
+let years = 2000;
+console.log(typeof years)
+
+let months = 11;
+console.log(typeof months)
+
+let days = 20;
+console.log(typeof days)
