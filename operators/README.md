@@ -26,7 +26,7 @@ Here the variable will store a numeric value
 
 - Multiply two numbers (5 different number pairs) and store the result in r1...r5
 
-- Divide two numbers (5 different number pairs) and store the result in r1...r5
+- Substract two numbers (5 different number pairs) and store the result in r1...r5
 - Find remainder of two numbers (5 different number pairs) and store the result in r1...r5
 
 Example
