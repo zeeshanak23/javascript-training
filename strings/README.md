@@ -24,4 +24,6 @@ Use back tick **`** for using variables inside a string and **${}** for referenc
 
 #### Assignment 3.2
 
-Rewrite the above program using String literal.
+a. Rewrite the above program using String literal.
+b. Given a string s consisting of words and spaces, return the length of the last word in the string
+c. Given a string s consisting of words and spaces, return the length of the longest word in the string
