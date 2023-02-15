@@ -106,9 +106,9 @@ let name = "My Name";
 
    There are few false and true values that are represented as String or numeric.
 
-   - 0 and negative numbers represent false
+   - 0 represents false
    - `undefined` value represents false
-   - All positive numbers represent true
+   - All positive or negative numbers represent true
    - Non-empty String value represents true
    - Empty object represents true
 
