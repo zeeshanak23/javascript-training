@@ -1,4 +1,4 @@
-#### Functions
+### Functions
 
 Functions are the building blocks for the software. Typically a software would consists of hundreds of small features,
 and each of these small feature would be built by one or more small functions. Now lets take a look at a function which checks if an individual has legal age to marry in India.
