@@ -139,7 +139,7 @@ Is the number greater than 50? If the user enters 'Y' in the prompt, then ask ag
 
 1. a = true
    b = true
-   a && b is true
+   then a && b is true
 
 2. a = false
    b = true
@@ -179,21 +179,30 @@ Is the number greater than 50? If the user enters 'Y' in the prompt, then ask ag
    !a is false
 
 2. a = false
-   !a is false
+   then !a is true
 
 #### Assignment 2.6
 
 1. If we need a range of years between 2020 and 2030, then which Boolean logic operator will be used
 
 2. Given an age and the qualification and the father's name, decide which logic operator will be used when entrace test eligibility rules are as follows:
+
    Any two among the below should be true
+   
    a. age > 20
+
    b. qualification = "B.Tech"
+
    c. son of a politician
+
 3. Given students marks in a subject, print out the grade as per the below rules.
+
    a. marks between 90 - 100 = Grade A
+   
    b. marks between 70 - 90 = Grade B
+   
    c. marks between 50 - 70 = Grade C
+   
    d. marks below 50 = Grade C
 
 
