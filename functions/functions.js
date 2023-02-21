@@ -39,7 +39,7 @@ ages.every(checkage)
 
 // // result
 // its return true
-// beacause it check every element
+// beacause it checksmarksevery element
 
 // array fill
 fruits_1.fill("banana", 1)
@@ -96,7 +96,7 @@ console.log(found)
 
 // result
 // [1, 2, 3, 4, 6, 4]
-// A new array with each element being the result of the callback function and found by a depth of 1.
+// A new array with each element being the result of the callbacksmarksfunction and found by a depth of 1.
 
 // array foreach
 const fruits = ['apple', 'banana', 'orange']
@@ -176,7 +176,7 @@ const number = [175, 20, 25]
 number.map(x => x * 2)
 
 // results
-// A new array with each element being the result of the callback function.
+// A new array with each element being the result of the callbacksmarksfunction.
 // [ 350, 40, 50 ]
 
 // array reverse
@@ -265,11 +265,175 @@ for (const values of iterator) {
 // 25
 
 // Create an array `marks` that stores the marks of a student in all the subjects. Convert the this array of marks to an array of `grades` based on the following rule.
-  
+
 //     a. Grade 'A' for marks between 80 and 100
-    
+
 //     b. Grade B for marks between 60 and 80
 
 //     c. Grade C for marks between 40 and 60
 
 //     d. Grade 'D' for marks below 40
+// Example: let marks = [23,45,67,65,87,90] then grades should be ['D','C','B','A', 'A']
+
+const marks = [23, 45, 67, 65, 87, 90]
+
+const getGrade7 = m => {
+
+    if (m > 80 && m <= 100) {
+        return 'A'
+    }
+    else if (m > 60 && m <= 80) {
+        return 'B'
+    }
+    else if (m > 40 && m <= 60) {
+        return 'C'
+    }
+    else {
+        return 'D'
+    }
+
+}
+
+// results
+marks.map(s => getGrade7(s))
+['D', 'B', 'B', 'A', 'B']
+
+
+// Create an array of array to store the marks scored in all the subjects in all the 8 semesters of an engineering program and then merge all the marks 
+// and calculate the grades based on the above grades rule.
+
+const score = [45, 12, 54, 65, 32, [12, 56, 78, 56, 87], [56, 89, 78, 65, 56], [56, 89, 76, 80, 69], [67, 89, 66, 56, 23], [90, 89, 76, 89
+    , 50], [80, 60, 58, 74, 59], [66, 34, 23, 54, 23]]
+
+
+// Understanding Objects
+let studenta = {
+    name: "zeeshan",
+    age: 21,
+    isStudent: true,
+    marks: [25, 56, 78, 68],
+    bornDate: new Date(2001, 10, 21),
+    sayHello: () => console.log("hello everyone"),
+}
+
+let studentb = {
+    name: "shadab",
+    age: 25,
+    isStudent: true,
+    marks: [56, 78, 97, 54],
+    bornDate: new Date(1997, 10, 12),
+    sayHello: () => console.log("hello everyone"),
+}
+
+let studentc = {
+    name: "serajul",
+    age: 30,
+    isStudent: true,
+    marks: [35, 87, 90, 67],
+    bornDate: new Date(1987, 9, 12),
+    sayHello: () => console.log("hello everyone"),
+}
+
+const students = [studenta, studentb, studentc]
+const getAverage_1 = arrayOfNumber => {
+    let sum = 0;
+    arrayOfNumber.forEach(a => {
+        sum += a;
+    })
+    return sum / arrayOfNumber.length;
+}
+
+const getAverageWithReeduce = arrayOfNumber => {
+    let sum = arrayOfNumber.reduce((acc, currentValue) => acc + currentValue, 0)
+    return sum / arrayOfNumber.length;
+}
+
+getAverageWithReeduce([2, 3, 4])
+students.filter(s => getAverage_1(s.marks) >= 50)
+students.filter(s => getAverage_1(s.marks) >= 50).map(s => s.name)
+['zeeshan', 'shadab', 'serajul']
+
+// Create multiple objects of type item, which has the following properties:
+let item_1 = {
+    itemName: "biryani",
+    itemPrice: 200,
+    orderCount: 6,
+}
+
+let item_2 = {
+    itemName: "chicken-chilli",
+    itemPrice: 1200,
+    orderCount: 10,
+}
+
+let item_3 = {
+    itemName: "mutton-gravy",
+    itemPrice: 1900,
+    orderCount: 6,
+}
+
+
+
+
+
+// Find the item which has the most number of orders.
+
+
+
+// Create a variable items that will store all the item objects created in the previous step.
+let itemes = [item_1, item_2, item_3]
+
+// Find the items whose price is greater than 1000.
+// results
+itemes.filter(s => (s.itemPrice) >= 1000)
+
+// Sort the items in ascending order of its price.
+itemes.sort();
+
+// Transform the items array into a list of items which has only two attributes - itemName and itemPrice.
+listOfItem = [itemes.map(s.itemName, s.itemPrice)]
+
+// Create mulitple objects of type medicine, which has the following properties -
+
+// medName
+
+// medPurchaseDate
+
+// medExpiryDate
+
+// medPrice
+let medicine_1 = {
+    medName: "lupicide",
+    medPurchase: new Date(2023, 02, 13),
+    medExpiry: new Date(2027, 12, 23),
+    medPrice: 900,
+}
+let medicine_2 = {
+    medName: "zincovit",
+    medPurchase: new Date(2022, 06, 16),
+    medExpiry: new Date(2029, 04, 12),
+    medPrice: 1120,
+}
+let medicine_3 = {
+    medName: "amlosafe",
+    medPurchase: new Date(2023, 04, 23),
+    medExpiry: new Date(2025, 08, 14),
+    medPrice: 1175
+}
+let today = new Date()
+
+// Create a variable meds that will store all the item objects created in the previous step.
+var meds = [medicine_1, medicine_2, medicine_3]
+
+// Find the meds whose price is greater than 1000.
+meds.filter(s => s.medPrice > 1000)
+
+// Find the medicine which was purchased latest.
+
+
+// Sort the items in ascending order of its expiry date.
+meds.sort(s => s.medExpiry)
+
+// Filter the medicine which has crossed the expiry date.
+
+// Find the medicine which has the least price.
