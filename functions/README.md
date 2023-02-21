@@ -114,3 +114,20 @@ Now use all the methods listed below in the screenshot with complete explainatio
      then grades should be ['D','C','B','A', 'A']
 
 2. Create an array of array to store the marks scored in all the subjects in all the 8 semesters of an engineering program and then merge all the marks and calculate the grades based on the above grades rule.
+
+
+### Understanding Objects
+
+Objects consist of primitive data types and also other objects. Lets look at an example of student
+
+```js
+let student = {
+  name: "Shad",
+  age : 30,
+  marks: [34,67,87,90],
+  bornDate: new Date(2000,10,10)
+  sayHello: () => console.log("Hello objects")
+}
+```
+
+
