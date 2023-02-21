@@ -150,40 +150,40 @@ The properties - (attributes / methods) can also be accessed using the field nam
 
 1. Create multiple objects of type item, which has the following properties:
 
-   a. itemName(string)
+   - itemName(string)
 
-   b. itemPrice(number)
+   - itemPrice(number)
 
-   c. orderCount(number)
+   - orderCount(number)
 
-Create a variable `items` that will store all the item objects created in the previous step.
+   Create a variable `items` that will store all the item objects created in the previous step.
 
-    a. Find the items whose price is greater than 1000.
+   - Find the items whose price is greater than 1000.
 
-    b. Find the item which has the most number of orders.
+   - Find the item which has the most number of orders.
 
-    c. Sort the items in ascending order of its price.
+   - Sort the items in ascending order of its price.
 
-    d. Transform the items array into a list of items which has only two attributes - itemName and itemPrice.
+   - Transform the items array into a list of items which has only two attributes - itemName and itemPrice.
 
 2. Create mulitple objects of type medicine, which has the following properties -
 
-   a. medName
+   - medName
 
-   b. medPurchaseDate
+   - medPurchaseDate
 
-   c. medExpiryDate
+   - medExpiryDate
 
-   d. medPrice
+   - medPrice
 
    Create a variable `meds` that will store all the item objects created in the previous step.
 
-   a. Find the meds whose price is greater than 1000.
+   - Find the meds whose price is greater than 1000.
 
-   b. Find the medicine which was purchased latest.
+   - Find the medicine which was purchased latest.
 
-   c. Sort the items in ascending order of its expiry date.
+   - Sort the items in ascending order of its expiry date.
 
-   d. Filter the medicine which has crossed the expiry date.
+   - Filter the medicine which has crossed the expiry date.
 
-   f. Find the medicine which has the least price.
+   - Find the medicine which has the least price.
