@@ -83,5 +83,36 @@ Set objects are collections of unique values. You can iterate its elements in in
 The following code shows some basic operations with a Set
 
 ```js
-const
+const numSet = new Set()
+numSet.add(29)
+numSet.add(45)
+
+//Remove elements
+numSet.delete(45)
+
+//Get the size
+numSet.size
+
+// Iterate over the set
+for(item of numSet){
+  console.log(numSet)
+}
+
+//Build set from array
+const arrSet = new Set([2,5,6,3,2,6])
+
 ```
+
+#### Assignment 5.2
+
+Create a set of mobile phone objects which has the following properties.
+
+  a. imeiNum
+
+  b. model
+
+  c. price
+
+  d. quantityAvailable
+
+Now add create a function named buyMobiles that takes two parameters - phones set and orderDetail. OrderDetail is an object that would consist of model name  and quantity ordered. If the quantity ordered is greater than quantityAvailable, show a message that the mobile phone has only 'x' quantity and update the set by removing that phone from the set.
