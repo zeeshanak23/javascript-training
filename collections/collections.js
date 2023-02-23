@@ -97,6 +97,80 @@ const articlesByAuthor = articleSet => {
     return mapOfArticles;
 }
 
+let users = new Map();
+users.set("don@mail.com", {
+    name: "Ram",
+    age: 30,
+    city: "Delhi"
+})
+
+users.set("dan@mail.com", {
+    name: "Ramesh",
+    age: 32,
+    city: "Kolkata"
+})
+
+users.set("jane@mail.com", {
+    name: "Jane Doe",
+    age: 30,
+    city: "New York"
+})
+
+users.set("joe@mail.com", {
+    name: "Joey",
+    age: 25,
+    city: "California"
+})
+
+users.set("mark@mail.com", {
+    name: "Mark",
+    age: 30,
+    city: "Washington"
+})
+
+let products = new Set()
+products.add({
+    productId: 1,
+    brandName: "Sony",
+    quantityAvailable: 10,
+    price: 100000,
+    popularity: 0,
+    dateManufactured: new Date(2020, 11, 11)
+})
+products.add({
+    productId: 4,
+    brandName: "Sony",
+    quantityAvailable: 10,
+    price: 100000,
+    popularity: 0,
+    dateManufactured: new Date(2020, 11, 11)
+})
+products.add({
+    productId: 2,
+    brandName: "Samsung",
+    quantityAvailable: 15,
+    price: 100040,
+    popularity: 0,
+    dateManufactured: new Date(2021, 11, 11)
+})
+products.add({
+    productId: 3,
+    brandName: "Sony",
+    quantityAvailable: 10,
+    price: 145000,
+    popularity: 0,
+    dateManufactured: new Date(2019, 11, 11)
+})
+products.add({
+    productId: 5,
+    brandName: "LG",
+    quantityAvailable: 5,
+    price: 100500,
+    popularity: 0,
+    dateManufactured: new Date(2020, 4, 11)
+})
+let productIds = [1, 2]
+let orders = new Set()
 const orderProduct = (userEmail, productIds, products, orders) => {
     const orderId = orders.size + 1
     const productIdSet = new Set(productIds)
