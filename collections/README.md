@@ -134,4 +134,4 @@ iii. Create a function `deleteArticles` that takes an author as a parameter and 
 
 iv. Create a function `deleteSensitiveArticles` that takes a sensitive word(string) as a parameter and the article set as a parameter, and deletes all the article that has that sensitive word.
 
-v. Create a function `convertToMap` that takes the set of articles and transforms the set of articles into map of articles where the key would the author name and value will be the array of articles written by the author.
+v. Create a function `convertToMap` that takes the set of articles as parameter and transforms the set of articles into map of articles where the key would the author name and value will be the array of articles written by the author.
