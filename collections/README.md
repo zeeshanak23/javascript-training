@@ -169,4 +169,4 @@ v. Create a function `convertToMap` that takes the set of articles as parameter 
 
  b. Create a function `listAllProducts` that list all the products, order by manufacturing date
 
- c. Create a function, `listUsersByCity` that takes the city and users list as a parameter and list all the users.
+ c. Create a function, `listUsersByCity` that takes the city and users set as a parameter and list all the users in that city.
