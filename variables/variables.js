@@ -85,3 +85,8 @@ console.log(typeof c8)
 console.log(typeof c9)
 console.log(typeof c10)
 
+// Initialize a variable yearOfBirth to your birth year (number).
+//  Change this number to string and then back to number.
+let yearOfBirth = 2001;
+let strYear2 = String(yearOfBirth)
+let strYear3 = Number(yearOfBirth)

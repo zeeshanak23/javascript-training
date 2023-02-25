@@ -131,7 +131,7 @@ i. Create a function `listArticlesPublished` that takes a date as a parameter an
 ii. Create a function `findArticlesByAuthor` that takes an author as a parameter and shows all the articles published by that author.
 
 iii. Create a function `deleteArticles` that takes an author as a parameter and the article set as a parameter, deletes all the articles written by that author and returns the updated articles.
-
+  
 iv. Create a function `deleteSensitiveArticles` that takes a sensitive word(string) as a parameter and the article set as a parameter, and deletes all the article that has that sensitive word.
 
 v. Transfrom the set of articles into map of articles where the key would the author name and value will be the array of articles written by the author.
