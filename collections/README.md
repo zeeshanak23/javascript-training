@@ -103,6 +103,7 @@ const arrSet = new Set([2, 5, 6, 3, 2, 6]);
 ```
 
 #### Assignment 5.1
+##### Buy Mobile from a showroom
 
 Create a set of mobile phone objects which has the following properties.
 
@@ -115,6 +116,8 @@ c. price
 d. quantityAvailable
 
 Now add create a function named buyMobiles that takes two parameters - phones set and orderDetail. OrderDetail is an object that would consist of model name and quantity ordered. If the quantity ordered is greater than quantityAvailable, show a message that the mobile phone has only 'x' quantity and update the set by removing that phone from the set.
+
+##### Manage articles for the authors
 
 Create a set of 5 articles which has the following properties.
 
@@ -134,4 +137,44 @@ iii. Create a function `deleteArticles` that takes an author as a parameter and 
   
 iv. Create a function `deleteSensitiveArticles` that takes a sensitive word(string) as a parameter and the article set as a parameter, and deletes all the article that has that sensitive word.
 
-v. Transfrom the set of articles into map of articles where the key would the author name and value will be the array of articles written by the author.
+v. Create a function `convertToMap` that takes the set of articles as parameter and transforms the set of articles into map of articles where the key would the author name and value will be the array of articles written by the author.
+
+
+##### Create an ecommerce application by creating following set and maps
+
+ a. Create a map of 5 users, where email id is the key and value is the detail of the user. Example as below.
+   ```js
+    "don@mail.com" -> { name: "Ram", age: 32, city: "Delhi"}
+   ```
+
+ b. Create a set of products, each product has the following properties.
+
+    i. productId(number)
+    ii. brandName(string)
+    iii. quantityAvailable(number)
+    iv. price(number)
+    v. popularity(number)
+    vi. dateManufactured(Date)
+
+ c. Create an empty set of orders, where each order will be having the following properties.
+
+    i. orderId(number)
+    ii. dateOrdered(Date)
+    iii. userEmail(string)
+    iv. productsOrdered(Set of numbers): this will consist of all the product Ids.
+
+ Now write the following programs.
+
+ a. Create a function `orderProduct` that takes the productId, user email, array of productIds, products set and the empty orderset and save all this in the OrderSet and increments the product's popularity that has been ordered by 1.
+
+ b. Create a function `listAllProducts` that list all the products, order by manufacturing date
+
+ c. Create a function, `listUsersByCity` that takes the city and users set as a parameter and list all the users in that city.
+
+ d. Create a function `listOrdersByUsers` that takes the orders set and products set as a parameter and returns a map of orders, where the key is the userId and value is the set of product brand name he has ordered.
+
+ e. Create a function `listOrdersOfProducts` that takes order set and products set as the parameter and returns a map of all the products, that has been ordered. The key of the returned map will be the brand name and the value will be the number of times the product has been ordered.
+
+ f. Create a function `sortProducts` that takes the product set and the field name as the parameter and returns an array of products that are sorted by the field name. For example if the function called - `sortProducts(products, "popularity")`, then the product set should be sorted by its popularity.
+
+ g. Create a function `mostPopularProductUsers` that takes the products, orders, and users as the parameter and returns an array of all the users who have ordered the product that has the highest popularity.
