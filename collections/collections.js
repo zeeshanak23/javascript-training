@@ -337,7 +337,7 @@ const listUsersByCity1 = (city, users) => {
  * returns a map of orders, where the key is the userId and
  *  value is the set of product brand name he has ordered. */
 
-const listOrderByUsers4 = (orders, products) => {
+let listOrderByUsers6 = (orders, products) => {
     let mapOfOrder = new Map()
     let productArray = Array.from(products)
     for (o of orders) {
@@ -382,6 +382,9 @@ let listOrdersOfProducts1 = (orders, products) => {
 
 }
 
+/**Create a function sortProducts that takes the product set and the field name as the parameter and 
+ * returns an array of products that are sorted by the field name. For example if the function called 
+ * - sortProducts(products, "popularity"), then the product set should be sorted by its popularity. */
 
 const sortProducts1 = (productses, fieldName) => {
     return Array.from(productses).sort((a, b) => a[fieldName] - b[fieldName])
@@ -417,3 +420,80 @@ let mostPopularProductUsers = (products, orders, users) => {
     }
     return userWithPopularProduct;
 }
+
+
+
+
+
+/**objects */
+
+function Users(name, age, city) {
+    this.name = name;
+    this.age = age;
+    this.city = city
+
+}
+
+
+
+const user11 = new Users("krishna", 20, "dhanbad")
+const user12 = new Users("afroz", 25, "punjab")
+const user13 = new Users("sohail", 27, "haryana")
+const user14 = new Users("zeeshan", 28, "ranchi")
+const user15 = new Users("shadab", 26, "mumbai")
+
+function Orders(orderId, dateOrdered, userEmail, productIdSet) {
+    this.orderId = orderId;
+    this.dateOrdered = dateOrdered;
+    this.userEmail = userEmail;
+    this.productIdSet = productIdSet
+}
+
+function Products(productId, brandName, quantityAvailable, price, popularity, dateManufactured) {
+    this.productId = productId;
+    this.brandName = brandName;
+    this.quantityAvailable = quantityAvailable;
+    this.price = price;
+    this.popularity = popularity;
+    this.dateManufactured = dateManufactured;
+}
+
+const product11 = new Products(1, "pantaloon", 1, 30000, 0, new Date(2020, 10, 22))
+const product12 = new Products(2, "reebook", 9, 23000, 0, new Date(2022, 12, 12))
+const product13 = new Products(3, "dell", 10, 8000, 0, new Date(2018, 09, 20))
+const product14 = new Products(4, "mi", 8, 60000, 0, new Date(2023, 01, 15))
+const product15 = new Products(5, "samsung", 4, 50000, 0, new Date(2010, 02, 09))
+
+const orderProducts = (userEmail, productIds, products, orders) => {
+    const orderId = orders.size + 1
+    const productIdSet = new Set(productIds)
+    orders.add = new Orders(orderId, new Date(), userEmail, productIdSet)
+
+    for (p of products) {
+        if (productIdSet.has(p.productId)) {
+            p.popularity += 1
+        }
+    }
+    return products;
+}
+
+
+function Cars(brandName, modelName, yearOfManufactured) {
+    this.brandName = brandName;
+    this.modelName = modelName;
+    this.yearOfManufactured = yearOfManufactured;
+}
+const car21 = new Cars("maruti", "vxi", 2020)
+const car32 = new Cars("hyundai", "lxi", 2021)
+const car43 = new Cars("bmw", "zxi", 2022)
+
+let arrayCar = Array.from(car21, car32, car43)
+
+let listCarsEarlierThan34 = (arrayCar, years) => {
+    return arrayCar.filter(y => y.yearOfManufactured == years)
+}
+
+let carAge = (year) => {
+    let car = new Date().getUTCFullYear() - yearOfManufactured()
+}
+
