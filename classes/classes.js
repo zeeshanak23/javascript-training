@@ -20,6 +20,7 @@ function Course1(courseId, name, durationInMonths, eligibility, startDate) {
 let c11 = new Course1(1, "full-stack", 12, "Graduate", new Date("2023-03-05"))
 let c22 = new Course1(2, "aws", 06, "Matric", new Date("2023-02-15"))
 let c33 = new Course1(3, "java", 05, "Graduate", new Date("2023-04-18"))
+let c313 = new Course1(3, "java", 05, "Graduate", new Date("2023-04-18"))
 
 
 
