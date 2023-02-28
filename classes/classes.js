@@ -8,7 +8,7 @@
 - startDate(date)
  */
 
-function Course(courseId, name, durationInMonths, eligibility, startDate) {
+function Course1(courseId, name, durationInMonths, eligibility, startDate) {
     this.courseId = courseId;
     this.name = name;
     this.durationInMonths = durationInMonths;
@@ -17,23 +17,40 @@ function Course(courseId, name, durationInMonths, eligibility, startDate) {
 }
 
 /**Create 3 courses and store in an array - `courses` */
-let course1 = new Course(1, "full-stack", "12 month", "Graduate", new Date("2023-03-10"))
-let course21 = new Course(2, "aws", 06, "Matric", new Date("2020-10-05"))
-let course31 = new Course(3, "java", 05, "Graduate", new Date("2021-10-18"))
+let c11 = new Course1(1, "full-stack", 12, "Graduate", new Date("2023-03-05"))
+let c22 = new Course1(2, "aws", 06, "Matric", new Date("2023-02-15"))
+let c33 = new Course1(3, "java", 05, "Graduate", new Date("2023-04-18"))
 
-const courses = [course1, course21, course31]
+
+
+const newCourses = [c11, c22, c33]
 
 /**Filter the courses that have already started.
 - Filter the courses that will start in next 7 days.
 - Filter the courses that will start in a month
 - Filter the courses that have already been completed. */
 
-const alreadyStarted = (courses) => {
-    return courses.filter(x => x.startDate < new Date().getUTCFullYear())
+const alreadyStarted = (newCourses) => {
+    return newCourses.filter(x => x.startDate < new Date())
 }
 
+let today1 = new Date()
+let after7day = today.setDate(today.getDate() + 7)
+// call=new Date(after7day)
+
+const checkWeek12 = (newCourses) => {
+    newCourses.filter(x => x.startDate.getTime() <= after7day && x.startDate >= today1.getTime())
+    return newCourses
+}
+
+// let getMonth1 = new Date(date.setMonth(date.getMonth() + 6))
+// const checkMonth = (newCourses) => {
+//     newCourses.filter(x => x.startDate == getMonth)
+//     return newCourses
+// }
+
 const alreadyCompleted = (courses) => {
-    return courses.filter(x => x.startDate > new Date().getUTCFullYear())
+    return courses.filter(x => x.startDate > new Date())
 }
 
 /**Create a function constructor `Student` with the following properites:
