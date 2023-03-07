@@ -1,0 +1,24 @@
+.profile-photo {
+    border-radius: 100%;
+    border: 8px solid white;
+    align-items: center;
+    margin-top: 2rem;
+    height: 200px;
+    width: 200px;
+    box-shadow: 3px 3px 10px 3px red;
+}
+
+p {
+    color: white;
+}
+
+h1 {
+    color: white;
+    font-size: small;
+    font-weight: 700;
+}
+
+.profile-img {
+    text-align: center;
+
+}

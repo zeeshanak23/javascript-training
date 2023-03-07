@@ -1,0 +1,13 @@
+.skill {
+    display: flex;
+    max-width: 350px;
+    justify-content: center;
+    color: white;
+    margin: 10px;
+}
+
+.skill>div {
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 4px;
+}
