@@ -1,0 +1,19 @@
+.navigation img {
+    height: 10px;
+    width: 10px;
+}
+
+h1 {
+    font-size: 1.1rem;
+}
+
+.navigation {
+    display: flex;
+    place-items: center;
+    justify-content: space-between;
+}
+
+.barTag {
+    display: flex;
+    padding: 0px 20px;
+}
