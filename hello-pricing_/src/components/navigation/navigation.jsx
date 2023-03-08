@@ -3,22 +3,25 @@ import './navigation.css';
 const NavBar = ({ image, name, }) => {
     return (
         <div className='navigation'>
-            <img src={image} className="dot" alt='logo' />
-            <h1>{name}</h1>
-            <div className='barTag'>
-                <p>Home</p>
-                <p>Products</p>
-                <p>Resource</p>
-                <p>Pricing</p>
+            <div className='logo'>
+                <img src={image} alt='logo' />
+                <h1>{name}</h1>
+            </div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#Products">Products</a>
+                <a href="#Resources">Resources</a>
+                <a href="#Pricing">Pricing</a>
             </div>
 
-            <span>
-                Log in
-            </span>
-            <span>
-                Sign up
-            </span>
-
+            <div>
+                <span className='log-in'>
+                    Log in
+                </span>
+                <span className='sign-up'>
+                    Sign up
+                </span>
+            </div>
         </div>
     );
 }

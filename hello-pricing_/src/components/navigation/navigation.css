@@ -10,10 +10,38 @@ h1 {
 .navigation {
     display: flex;
     place-items: center;
+    margin-left: 30px;
+}
+
+.nav-links {
+    display: flex;
     justify-content: space-between;
 }
 
-.barTag {
+.nav-links>a {
+    margin: 0px 20px;
+    text-decoration: none;
+    color: black;
+    margin-left: 30px;
+    font-weight: 500;
+}
+
+.logo {
+    margin: 0px 10px;
     display: flex;
-    padding: 0px 20px;
+    align-items: center;
+}
+
+.log-in {
+    font-weight: 500;
+    margin-left: 500px;
+}
+
+.sign-up {
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    margin: 0px 10px;
+    padding: 5px;
+    font-size: 0.9rem;
 }
