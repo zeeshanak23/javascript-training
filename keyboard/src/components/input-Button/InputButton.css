@@ -1,0 +1,17 @@
+.letter {
+    font-size: 1.4rem;
+    height: 65px;
+    width: 70px;
+    border-radius: 12px;
+    background-color: #2e2e2e;
+    color: white;
+    border: 1px solid #3f3f3f;
+    transition: all 0.5s;
+    margin: 0px 5px;
+
+}
+
+.letter:hover {
+    background-color: #1581ff;
+
+}
