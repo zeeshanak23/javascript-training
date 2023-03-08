@@ -16,7 +16,7 @@ const Calculator = ({ num1, num2, num3, num4, num5 }) => {
     return (
         <div className="calculator">
             <textarea className="text-box" rows={3} value={state.outputValue} />
-            <hr></hr>
+            <hr className="hr"></hr>
 
             <div>
 
