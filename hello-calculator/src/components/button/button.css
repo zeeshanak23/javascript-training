@@ -1,0 +1,8 @@
+.numbtn {
+    height: 70px;
+    width: 80px;
+    border-radius: 12px;
+    background-color: dimgray;
+    color: white;
+    margin: 5px;
+}
