@@ -4,4 +4,4 @@ const SkillsTag = ({ skill }) => (
     <div className='skill'>{skill}
     </div>
 )
-export default SkillsTag;
+export default SkillsTag;   
