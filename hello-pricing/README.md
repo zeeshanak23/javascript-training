@@ -1,0 +1,1 @@
+![Added the UI Design of Pricing](assets/pricing.jpeg)
