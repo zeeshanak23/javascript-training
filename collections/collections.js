@@ -484,16 +484,19 @@ function Cars(brandName, modelName, yearOfManufactured) {
     this.yearOfManufactured = yearOfManufactured;
 }
 const car21 = new Cars("maruti", "vxi", 2020)
-const car32 = new Cars("hyundai", "lxi", 2021)
+const car31 = new Cars("hyundai", "lxi", 2021)
 const car43 = new Cars("bmw", "zxi", 2022)
 
-let arrayCar = Array.from(car21, car32, car43)
-
-let listCarsEarlierThan34 = (arrayCar, years) => {
-    return arrayCar.filter(y => y.yearOfManufactured == years)
+// let arrayCar = Array.from(car21, car31, car43)
+let cars1 = [car21, car31, car43]
+let listCarsEarlierThan34 = (cars1, years) => {
+    return cars1.filter(y => y.yearOfManufactured < years)
+}
+const listCarsAge = (cars1) => {
+    cars1.forEach(c => {
+        console.log(`the ${c.brandName} is model ${c.modelName} is ${new Date().getUTCFullYear() - c.yearOfManufacture} years old`)
+    }
+    )
 }
 
-let carAge = (year) => {
-    let car = new Date().getUTCFullYear() - yearOfManufactured()
-}
 
