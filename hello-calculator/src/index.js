@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Calculator from './calculator';
+import Calculator from './components/CalculatorApp/calculator';
 
 
-const n1 = ["C", "()", "%", "/"]
+const n1 = ["()", "%", "/"]
 const n2 = ["7", "8", "9", "*"]
 const n3 = ["4", "5", "6", "-"]
 const n4 = ["1", "2", "3", "+"]
-const n5 = ["+/-", "0", ".", "="]
+const n5 = ["+/-", "0", "."]
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

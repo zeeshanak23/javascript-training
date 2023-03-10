@@ -1,0 +1,68 @@
+.text-box {
+    height: 100px;
+    width: 350px;
+    background-color: black;
+    margin: 20px;
+    border-color: black;
+    text-align: right;
+    color: white;
+    font-size: 2.1rem;
+}
+
+.h1 {
+    width: 200px;
+    padding: 2px;
+    background-color: white;
+    text-align: center;
+}
+
+input {
+    height: 40px;
+    background-color: black;
+    border: none;
+    color: white;
+    margin: 0px 200px;
+    text-align: right;
+}
+
+
+
+.calculator {
+
+    margin: 60px auto;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    height: 720px;
+    width: 400px;
+    border-radius: 12px;
+}
+
+.result {
+    height: 40px;
+    background-color: black;
+    border: none;
+    color: white;
+    margin: 0px 330px;
+    text-align: right;
+    font-size: 2.1rem;
+}
+
+.Eql-btn {
+    height: 70px;
+    width: 80px;
+    border-radius: 12px;
+    background-color: dimgray;
+    color: white;
+    margin: 5px;
+    width: 200px;
+}
+
+.clear-btn {
+    height: 70px;
+    width: 80px;
+    border-radius: 12px;
+    background-color: red;
+    color: white;
+    margin: 5px;
+}

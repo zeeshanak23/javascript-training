@@ -11,34 +11,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-.text-box {
-  height: 100px;
-  width: 350px;
-  background-color: black;
-  margin: 20px;
-  border-color: black;
-  text-align: right;
-  color: white;
-}
-
-.h1 {
-  width: 200px;
-  padding: 2px;
-  background-color: white;
-  text-align: center;
-}
-
-
-
-
-.calculator {
-
-  margin: 60px auto;
-  align-items: center;
-  text-align: center;
-  background-color: black;
-  height: 600px;
-  width: 400px;
-  border-radius: 12px;
-}
