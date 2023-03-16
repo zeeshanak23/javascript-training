@@ -1,0 +1,41 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav>a {
+    text-decoration: none;
+    color: #9e9e9e;
+    margin-top: 25px;
+    font-weight: 600;
+}
+
+nav>a:nth-child(4) {
+    color: #4442c5;
+    font-size: bold;
+    font-weight: 700;
+}
+
+.nav-hr {
+    border: 3px solid #4442c5;
+}
+
+.brand-name {
+    display: flex;
+    text-align: center;
+}
+
+nav>button {
+    border-radius: 20px;
+    background-color: #4442c5;
+    color: white;
+    border: none;
+    align-items: center;
+    height: 30px;
+    width: 100px;
+    margin-top: 25px;
+}
+
+nav>div>img {
+    margin: 20px;
+}

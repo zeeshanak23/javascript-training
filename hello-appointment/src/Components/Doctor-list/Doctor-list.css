@@ -1,0 +1,33 @@
+.doctor-collection {
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .8);
+    border-radius: 12px;
+    height: 300px;
+    width: 250px;
+    margin: 10px 20px;
+}
+
+.doctor-collection {
+    margin-top: -430px;
+}
+
+.doctor-list img {
+    margin: 20px 10px;
+}
+
+.name {
+    text-align: center;
+    margin: 15px 10px;
+}
+
+.name img {
+    margin-top: 0px;
+    place-items: center;
+    margin: 0px 20px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}

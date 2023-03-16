@@ -1,0 +1,65 @@
+#general-information-form {
+    margin: 0px 200px;
+    height: 850px;
+    width: 880px;
+    background-color: white;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .8);
+
+}
+
+#general-information-form>hr {
+    width: 730px;
+    border: 2px solid #d6d6d6;
+}
+
+#general-information-form p {
+    margin: 30px;
+}
+
+.question-ask {
+    display: flex;
+    margin: 30px;
+    margin-bottom: -10px;
+}
+
+.form-heading {
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: -30px;
+}
+
+.form-heading>h1:first-child {
+    margin: 0px 10px;
+    color: #f5994a;
+    font-weight: bolder;
+    font-size: 3.8rem
+}
+
+.form-heading>h1:last-child {
+    color: black;
+    font-weight: 500;
+}
+
+.visit-reason-list img {
+    height: 35px;
+    width: 35px;
+    margin: 0px 5px;
+}
+
+.visit-reason-list {
+    display: flex;
+    margin: 1px 20px;
+}
+
+.visit-reason-list>div {
+    display: flex;
+    align-items: center;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .8);
+    border: 2px solid gray;
+    border-radius: 12px;
+    width: 140px;
+    height: 80px;
+    margin: 0px 5px;
+}
