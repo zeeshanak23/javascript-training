@@ -1,0 +1,126 @@
+.form {
+    margin: 0 auto;
+    background-color: white;
+    height: 600px;
+    width: 650px;
+    border-radius: 12px;
+
+}
+
+.name {
+    display: flex;
+}
+
+.icon {
+    height: 25px;
+}
+
+.service {
+    display: flex;
+}
+
+.form_section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.formHeader {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 30px;
+}
+
+.service>div {
+    margin: 0px 20px;
+}
+
+
+.s1 {
+    background-color: #f3f3f3;
+    padding: 5px 5px;
+    border-radius: 12px;
+    width: 150px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.s2 {
+    background-color: #f3f3f3;
+    padding: 5px 5px;
+    border-radius: 12px;
+    width: 250px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.fill_section {
+    background-color: white;
+    max-width: 650px;
+    height: 700px;
+    margin: 0 auto;
+    border-radius: 12px;
+}
+
+.name {
+    display: flex;
+    width: 250px;
+    padding: 5px 10px;
+    border-radius: 12px;
+    background-color: #f3f3f3;
+    margin: 1px 10px;
+
+}
+
+.message {
+    height: 250px;
+}
+
+.header {
+    font-size: 1.5rem;
+    margin-left: 40px;
+}
+
+.serviceP {
+    margin-left: 40px;
+}
+
+.name>input {
+    background-color: #f3f3f3;
+    border: none;
+    margin: 10px;
+}
+
+.heading-form {
+    margin-left: 20px;
+}
+
+.message {
+
+    width: 300px;
+    border-radius: 12px;
+    background-color: #f3f3f3;
+    border: none;
+}
+
+
+
+
+.icon_size {
+    height: 25px;
+}
+
+.button>button {
+    color: white;
+    padding: 10px 20px;
+    border-radius: 12px;
+    border: none;
+    font-size: 1.2rem;
+    background-color: #fa949d;
+}
+
+.button {
+    margin: 20px;
+    text-align: center;
+
+}
